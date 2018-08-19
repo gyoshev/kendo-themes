@@ -9,15 +9,18 @@
 
     <style>
         #test-area {
+            max-width: 1024px;
             display: grid;
             grid-template-columns: 1fr 1fr;
+            grid-gap: 20px;
         }
+        #test-area::after { display: none; }
     </style>
 </head>
 <body>
 
     <div id="test-area">
-        <div class="section">
+        <section>
             <kendo-grid class="k-widget k-grid k-grid-no-scrollbar" style="width: 480px;">
                 <kendo-grid-toolbar class="k-header k-grid-toolbar">
                     <button class="k-button k-grid-add-command" dir="ltr">Add new</button>
@@ -82,9 +85,9 @@
                     </kendo-grid-list>
                 </div>
             </kendo-grid>
-        </div>
+        </section>
 
-        <div class="section">
+        <section>
             <div id="grid" data-role="grid" class="k-grid k-grid-no-scrollbar k-widget k-display-block" style="height: 250px;">
                 <div class="k-header k-grid-toolbar">
                     <a role="button" class="k-button k-button-icontext k-grid-add" href="#">Add new</a>
@@ -94,10 +97,7 @@
                     <div class="k-grid-header-wrap k-auto-scrollable">
                         <table role="grid">
                             <colgroup>
-                                <col style="width:240px">
-                                <col>
-                                <col>
-                                <col style="width:150px">
+                                <col><col><col><col>
                             </colgroup>
                             <thead role="rowgroup">
                                 <tr role="row">
@@ -113,10 +113,7 @@
                 <div class="k-grid-content k-auto-scrollable">
                     <table role="grid" style="height: auto;">
                         <colgroup>
-                            <col style="width:240px">
-                            <col>
-                            <col>
-                            <col style="width:150px">
+                            <col><col><col><col>
                         </colgroup>
                         <tbody role="rowgroup">
                             <tr role="row">
@@ -129,9 +126,9 @@
                     </table>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <div class="section">
+        <section>
             <kendo-grid height="500" dir="ltr" class="k-widget k-grid k-grid-no-scrollbar" style="">
                 <kendo-grid-group-panel class="k-grouping-header k-grouping-header-flex">
                     <div class="k-indicator-container">
@@ -161,8 +158,7 @@
                         <div class="k-grid-header-wrap" role="presentation">
                             <table role="presentation">
                                 <colgroup role="presentation">
-                                    <col class="k-group-col">
-                                    <col><col><col><col>
+                                    <col class="k-group-col"><col><col><col><col>
                                 </colgroup>
                                 <thead role="presentation">
                                     <tr role="row" aria-rowindex="1">
@@ -190,8 +186,7 @@
                             <div role="presentation">
                                 <table class="k-grid-table" role="presentation" style="transform: translateY(0px);">
                                     <colgroup role="presentation">
-                                        <col class="k-group-col">
-                                        <col><col><col><col>
+                                        <col class="k-group-col"><col><col><col><col>
                                     </colgroup>
                                     <tbody role="presentation">
                                         <tr role="row" aria-rowindex="4" class="k-grouping-row">
@@ -234,9 +229,9 @@
                     </kendo-grid-list>
                 </div>
             </kendo-grid>
-        </div>
+        </section>
 
-        <div class="section">
+        <section>
             <div id="grid" data-role="grid" class="k-grid k-grid-no-scrollbar k-widget k-display-block" style="height: 250px;">
                 <div class="k-grouping-header" data-role="droptarget">
                     <div class="k-group-indicator">
@@ -259,10 +254,7 @@
                     <div class="k-grid-header-wrap k-auto-scrollable">
                         <table role="grid">
                             <colgroup>
-                                <col style="width:240px">
-                                <col>
-                                <col>
-                                <col style="width:150px">
+                                <col><col><col><col>
                             </colgroup>
                             <thead role="rowgroup">
                                 <tr role="row">
@@ -278,10 +270,7 @@
                 <div class="k-grid-content k-auto-scrollable">
                     <table role="grid" style="height: auto;">
                         <colgroup>
-                            <col style="width:240px">
-                            <col>
-                            <col>
-                            <col style="width:150px">
+                            <col><col><col><col>
                         </colgroup>
                         <tbody role="rowgroup">
                             <tr role="row">
@@ -294,15 +283,15 @@
                     </table>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <div class="section">
+        <section>
             <div class="k-header k-drag-clue"><span class="k-icon k-drag-status k-i-plus"></span>Drag clue</div>
-        </div>
+        </section>
 
-        <div class="section" style="height: 80px; position: relative; border: 1px solid #eee;">
+        <section style="height: 80px; position: relative; border: 1px solid #eee;">
             <div class="k-grouping-dropclue" style="display: block; height: 50px; top: 0; left: 0;"></div>
-        </div>
+        </section>
     </div>
 
 </body>
