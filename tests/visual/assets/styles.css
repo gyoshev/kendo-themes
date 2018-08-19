@@ -9,6 +9,7 @@ body {
 
 #test-area {
     padding: 20px;
+    box-sizing: border-box;
 }
 
 #test-area::after {
