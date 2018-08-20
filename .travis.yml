@@ -17,6 +17,8 @@ node_js:
 
 before_install:
   - printf "//registry.npmjs.org/:_authToken=\${NPM_TOKEN}" >> ~/.npmrc
+  - sudo apt-get update
+  - sudo apt-get install -y firefox
 
 before_script:
   - lerna bootstrap --concurrency=1
