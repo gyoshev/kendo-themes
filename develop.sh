@@ -22,6 +22,6 @@ pushd packages/material
 npm run watch &
 popd
 
-npx webpack-dev-server --port 8080 &
+npx webpack-dev-server --port 8080 --host 0.0.0.0 &
 
 wait
